@@ -12,7 +12,6 @@
             display: flex;
             justify-content: center;
             align-items: center;
-      
             background-color: #f0f2f5;
             margin: 0;
         }
@@ -24,24 +23,21 @@
             width: 450px;
             padding: 20px;
             font-family: Arial, sans-serif;
-            /* position: relative; */
             overflow: hidden;
         }
         .card::before {
-            content: '  ';
+            content: '';
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            /* background-image: url('path/to/your/background-image.png'); */
             background-size: cover;
             background-repeat: no-repeat;
             opacity: 0.1;
             z-index: 0;
         }
         .card-content {
-            /* position: relative; */
             z-index: 1;
         }
         .card img.logo {
@@ -55,12 +51,16 @@
             text-align: center;
             margin-top: 10px;
         }
-        .profile-photo-container img {
-            border-radius: 5%;
-            width: 50%;
-            height: 50%;
-            object-fit: cover;
-            object-position: top;
+        .carousel {
+            width: 100%;
+            height: 520px; 
+            overflow: hidden;
+        }
+        .carousel img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; 
+            border-radius: 20px;
         }
         .info {
             margin: 20px 0;
@@ -80,35 +80,29 @@
             color: #f39c12;
             font-weight: bold;
         }
-        .lan_btn{
+        .lan_btn {
             z-index: 2;
         }
-        a{
+        a {
             text-align: none;
             text-decoration: none;
         }
-    a:hover{
-        cursor: pointer;
-        text-decoration: none;
-        color: black;
-    }
-      
+        a:hover {
+            cursor: pointer;
+            text-decoration: none;
+            color: black;
+        }
     </style>
 </head>
 <body>
     <div class="card">
         <div class="lan_btn d-flex justify-content-between">
-              
-              <a href="पराग_शिंदे.pdf" download="">
-            <button type="button" class="btn btn-outline-danger btn-sm">
-              Download 
-            </button>
+            <a href="पराग_शिंदे.pdf" download="">
+                <button type="button" class="btn btn-outline-danger btn-sm">Download</button>
             </a>
             <a href="English.html">
-                <button type="button" class="btn btn-outline-primary btn-sm">
-                   English
-                </button>
-                </a>
+                <button type="button" class="btn btn-outline-primary btn-sm">English</button>
+            </a>
         </div>
         <div class="card-content">
             <img class="logo" src="https://png.pngtree.com/png-vector/20230515/ourmid/pngtree-buddha-illustration-with-moon-vector-png-image_7098196.png" alt="Logo" width="50" height="50"> <!-- Logo placeholder -->
@@ -117,34 +111,34 @@
             <div class="profile-photo-container">
                 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img src="2.jpg" class="d-block w-100" alt="...">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="1.jpg" class="d-block w-100" alt="...">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="3.jpeg" class="d-block w-100" alt="...">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="4.jpg" class="d-block w-100" alt="...">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="5.jpeg" class="d-block w-100" alt="...">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="6.jpg" class="d-block w-100" alt="...">
-                      </div>
+                        <div class="carousel-item active">
+                            <img src="2.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="1.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="3.jpeg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="4.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="5.jpeg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="6.jpg" class="d-block w-100" alt="...">
+                        </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Previous</span>
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
                     </button>
                     <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Next</span>
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
                     </button>
-                  </div>
+                </div>
             </div>
             <div class="info">
                 <p><span class="highlight">नाव :</span> पराग विलास शिंदे.</p>
